@@ -1,0 +1,38 @@
+/* Postavke za cijeli izbornik */
+.categories {
+    width: 200px; /* Fiksna širina izbornika */
+    padding: 20px;
+    margin-top: 30px;
+    margin-left: 10px;
+    background-color: #ffffff;
+    box-shadow: 2px 0px 15px rgba(0, 123, 255, 0.5); /* Blaga sjena sa desne strane u plavoj boji */
+    border-radius: 10px;
+}
+
+/* Stilizacija lista i elemenata */
+.categories ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.categories li {
+    display: flex; /* Za poravnanje teksta i ikone */
+    align-items: center; /* Vertikalno centriranje */
+    justify-content: center; /* Horizontalno centriranje */
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    border-radius: 5px; /* Zaokruženi rubovi */
+    margin-bottom: 10px;
+}
+
+
+/* Hover efekti */
+.categories li:hover {
+    background-color: #007bff; /* Pozadinska plava boja */
+    color: white; /* Bijela boja teksta */
+    transform: scale(1.1); /* Lagani zoom efekt pri hoveru */
+}
+

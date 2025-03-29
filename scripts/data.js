@@ -3,211 +3,201 @@ const data = {
     "categories": [
         { 
             "name" : "Društvene igre",
-            "image" : "meat.jpg",
             "products" : [
                 { 
-                    "name" : "Monopoly", "image" : "drumstick250g.jpg"
+                    "name" : "Monopoly", "image" : "images/drustvene_igre/monopoly.jpg"
                 },
                 { 
-                    "name" : "Čovječe, ne ljuti se", "image" : "rumpsteak1kg.jpg"
+                    "name" : "Čovječe, ne ljuti se", "image" : "images/drustvene_igre/covjece_ne_ljuti_se.jpg"
                 },                
                 { 
-                    "name" : "Šah", "image" : "sausages150gr.jpg"
+                    "name" : "Šah", "image" : "images/drustvene_igre/sah.jpg"
                 },                
                 { 
-                    "name" : "Twister", "image" : "sausages150gr.jpg"
+                    "name" : "Twister", "image" : "images/drustvene_igre/twister.jpg"
                 },
                 { 
-                    "name" : "Zmije i ljestve", "image" : "sausages150gr.jpg"
+                    "name" : "Zmije i ljestve", "image" : "images/drustvene_igre/zmije_i_ljestve.jpg"
                 }
             ]
         },
         { 
             "name" : "Karte",
-            "image" : "candy.jpg",
             "products" : [
                 { 
-                    "name" : "UNO", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "UNO", "image" : "images/karte/uno.jpg"
                 },
                 { 
-                    "name" : "DOS", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "DOS", "image" : "images/karte/dos.jpg"
                 },
                 { 
-                    "name" : "Tarot karte", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Tarot", "image" : "images/karte/tarot.jpg"
                 },
                 { 
-                    "name" : "Poker karte crne", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Poker 1", "image" : "images/karte/poker_1.jpg"
                 },
                 { 
-                    "name" : "Poker karte bijele", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Poker 2", "image" : "images/karte/poker_2.jpg"
                 }
             ]
         },
         { 
             "name" : "Lopte",
-            "image" : "candy.jpg",
             "products" : [
                 { 
-                    "name" : "Lopta za nogomet", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Lopta za nogomet", "image" : "images/lopte/nogomet.jpg"
                 },
                 { 
-                    "name" : "Lopta za rukomet", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Lopta za rukomet", "image" : "images/lopte/rukomet.jpg"
                 },
                 { 
-                    "name" : "Lopta za košarku", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Lopta za košarku", "image" : "images/lopte/kosarka.jpg"
                 },
                 { 
-                    "name" : "Lopta za vaterpolo", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Loptica za golf", "image" : "images/lopte/golf.jpg"
                 },
                 { 
-                    "name" : "Lopta za odbojku", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Loptica za tenis", "image" : "images/lopte/tenis.jpg"
                 }
             ]
         },
         { 
             "name" : "Plišane igračke",
-            "image" : "candy.jpg",
             "products" : [
                 { 
-                    "name" : "Medvjedić", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Medvjedić", "image" : "images/plisane_igracke/medvjed.jpg"
                 },
                 { 
-                    "name" : "Slon", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Kornjača", "image" : "images/plisane_igracke/kornjaca.jpg"
                 },
                 { 
-                    "name" : "Lav", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Lisica", "image" : "images/plisane_igracke/lisica.jpg"
                 },
                 { 
-                    "name" : "Žirafa", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Panda", "image" : "images/plisane_igracke/panda.jpg"
                 },
                 { 
-                    "name" : "Pingvin", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Sova", "image" : "images/plisane_igracke/sova.jpg"
                 }
             ]
         },
         { 
             "name" : "Igračke za pijesak",
-            "image" : "candy.jpg",
             "products" : [
                 { 
-                    "name" : "Kamion", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Kamion", "image" : "images/pijesak/kamion.jpg"
                 },
                 { 
-                    "name" : "Bager", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Bager", "image" : "images/pijesak/bager.jpg"
                 },
                 { 
-                    "name" : "Valjak", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Zvijezda kalup", "image" : "images/pijesak/zvijezda_kalup.jpg"
                 },
                 { 
-                    "name" : "Kantica", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Kantica", "image" : "images/pijesak/kantica.jpg"
                 },
                 { 
-                    "name" : "Lopatica", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Lopatica", "image" : "images/pijesak/lopatica.jpg"
                 }
             ]
         },
         { 
             "name" : "Igračke na daljinski",
-            "image" : "candy.jpg",
             "products" : [
                 { 
-                    "name" : "Auto", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Auto 1", "image" : "images/daljinski/auto_1.jpg"
                 },
                 { 
-                    "name" : "Policijski auto", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Auto 2", "image" : "images/daljinski/auto_2.jpg"
                 },
                 { 
-                    "name" : "Formula", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Formula", "image" : "images/daljinski/formula.jpg"
                 },
                 { 
-                    "name" : "Vatrogasni kamion", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Brod", "image" : "images/daljinski/brod.jpg"
                 },
                 { 
-                    "name" : "Helikopter", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Helikopter", "image" : "images/daljinski/helikopter.jpg"
                 }
             ]
         },
         { 
             "name" : "Puzzle",
-            "image" : "candy.jpg",
             "products" : [
                 { 
-                    "name" : "Priroda 100 komada", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Priroda", "image" : "images/puzzle/priroda.jpg"
                 },
                 { 
-                    "name" : "Priroda 1000 komada", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Cvijeće", "image" : "images/puzzle/cvijece.jpg"
                 },
                 { 
-                    "name" : "Karta svijeta 1000 komada", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Svijet", "image" : "images/puzzle/svijet.jpg"
                 },
                 { 
-                    "name" : "Životinje 150 komada", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Slova", "image" : "images/puzzle/slova.jpg"
                 },
                 { 
-                    "name" : "Auto 100 komada", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Zgrada", "image" : "images/puzzle/zgrada.jpg"
                 }
             ]
         },
         { 
             "name" : "Igre za van",
-            "image" : "candy.jpg",
             "products" : [
                 { 
-                    "name" : "Bicikl", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Bicikl za dečke", "image" : "images/za_van/bicikl_decki.jpg"
                 },
                 { 
-                    "name" : "Trampolin", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Bicikl za curice", "image" : "images/za_van/bicikl_curice.jpg"
                 },
                 { 
-                    "name" : "Ljuljačka", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Ljuljačka", "image" : "images/za_van/ljuljacka.jpg"
                 },
                 { 
-                    "name" : "Vrtuljak", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Trampolin", "image" : "images/za_van/trampolin.jpg"
                 },
                 { 
-                    "name" : "Tobogan", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Sanjke", "image" : "images/za_van/sanjke.jpg"
                 }
             ]
         },
         { 
             "name" : "Crtanje",
-            "image" : "candy.jpg",
             "products" : [
                 { 
-                    "name" : "Bojanka", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Bojice", "image" : "images/crtanje/bojice.jpg"
                 },
                 { 
-                    "name" : "Flomasteri", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Flomasteri", "image" : "images/crtanje/flomasteri.jpg"
                 },
                 { 
-                    "name" : "Set za bojanje", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Grafitne olovke", "image" : "images/crtanje/grafitne_olovke.jpg"
                 },
                 { 
-                    "name" : "Tempere", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Tempere", "image" : "images/crtanje/tempere.jpg"
                 },
                 { 
-                    "name" : "Papir za crtanje", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Pastele", "image" : "images/crtanje/pastele.jpg"
                 }
             ]
         },
         { 
             "name" : "Figurice",
-            "image" : "candy.jpg",
             "products" : [
                 { 
-                    "name" : "Super-Man", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Astronaut", "image" : "images/figurice/astronaut.jpg"
                 },
                 { 
-                    "name" : "Batman", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Djed Božičnjak", "image" : "images/figurice/djed_bozicnjak.jpg"
                 },
                 { 
-                    "name" : "Mickey Mouse", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Orašar", "image" : "images/figurice/orasar.jpg"
                 },
                 { 
-                    "name" : "Iron Man", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "Miš Jerry", "image" : "images/figurice/jerry.jpg"
                 },
                 { 
-                    "name" : "Barbie", "image" : "zivotinjskocarstvo.jpg"
+                    "name" : "LEGO planinar", "image" : "images/figurice/lego.jpg"
                 }
             ]
         }

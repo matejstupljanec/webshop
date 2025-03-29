@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matej Stupljanec">
+    <meta name="description" content="Web-trgovina za igračke">
+    
+    <title>Igraonica</title>
+
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/categories.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.jpg" alt="logo_icon">
+            </a>
+        </div>
+        <div id="header_category">
+            <p>Dobrodošli u Igraonicu - svijet igre i zabave!</p>
+        </div>
+        <div class="icon">
+            <a href="cart.html">
+                <img src="images/cart.png" alt="cart_icon">
+            </a>
+            <img src="images/search.png" alt="search_icon">
+        </div>
+    </header>
+
+    <nav class="categories">
+        <ul>
+            <li onclick="showProducts('Društvene igre')">Društvene igre</li>
+            <li onclick="showProducts('Figurice')">Figurice</li>
+            <li onclick="showProducts('Lopte')">Lopte</li>
+            <li onclick="showProducts('Igre za van')">Igre za van</li>
+            <li onclick="showProducts('Igračke za pijesak')">Igračke za pijesak</li>
+            <li onclick="showProducts('Igračke na daljinski')">Igračke na daljinski</li>
+            <li onclick="showProducts('Plišane igračke')">Plišane igračke</li>
+            <li onclick="showProducts('Puzzle')">Puzzle</li>
+            <li onclick="showProducts('Crtanje')">Crtanje</li>
+            <li onclick="showProducts('Karte')">Karte</li>
+        </ul>
+    </nav>
+
+    <nav class="categories">
+        <ul>
+            <li>Kontakt</li>
+            <li>Newsletter</li>
+            <li>Pretplati se</li>
+        </ul>
+    </nav>
+
+    <div class="picture">
+        <div class="picture_text">
+            <p>Pronađite savršene igračke za sve uzraste i uživajte u trenucima bezbrižne igre.</p>
+        </div>
+        <img src="images/front_pic.jpg" alt="front_picture">
+    </div>
+
+
+    <div id="products-container" class="products"></div>   
+
+
+    <script src="scripts/data.js"></script>
+    <script src="scripts/products.js"></script>
+</body>
+</html>
