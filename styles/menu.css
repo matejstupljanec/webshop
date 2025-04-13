@@ -17,9 +17,7 @@
 }
 
 .categories li {
-    display: flex; /* Za poravnanje teksta i ikone */
-    align-items: center; /* Vertikalno centriranje */
-    justify-content: center; /* Horizontalno centriranje */
+    text-align: center;
     padding: 15px;
     font-size: 18px;
     cursor: pointer;

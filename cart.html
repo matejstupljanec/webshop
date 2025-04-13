@@ -9,7 +9,8 @@
     <title>Igraonica</title>
 
     <link rel="stylesheet" href="styles/index.css">
-    <script src="scripts/index.js"></script>
+    <link rel="stylesheet" href="styles/cart.css">
+
 </head>
 <body>
 
@@ -19,19 +20,43 @@
                 <img src="images/logo.jpg" alt="logo_icon">
             </a>
         </div>
-        <div class="category">Sadržaj vaše košarice</div>
-        <div class="icon">
-            <a href="cart.html">
-                <img src="images/cart.png" alt="cart_icon">
-            </a>
-            <img src="images/search.png" alt="search_icon">
+        <div class="category">Pogledajte što ste odabrali dosad.</div>
+        <div class="icon-container">
+            <div class="icon-cart" id="icon-cart">
+                <a href="cart.html">
+                    <img src="images/cart.png" alt="cart_icon">
+                </a>
+            </div>
+            <div class="icon-search">
+                <img src="images/search.png" alt="search_icon">
+            </div>
         </div>
     </header>
 
+    
+    <div class="cart">
+        <h1>KOŠARICA</h1>
 
-   
+        <div class="cart-table">
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Naziv proizvoda</td>
+                        <th>Količina</td>
+                    </tr>
+                </thead>
+
+                <tbody id="cart-items">
+                    <!-- Ovdje se dinamicki dodaju odabrani proizvodi -->
+                </tbody>
+
+            </table>
+        </div>
+    </div>
 
     
-    
+    <script src="scripts/manageCart.js"></script>
+    <script>showCartItems()</script>
 </body>
 </html>

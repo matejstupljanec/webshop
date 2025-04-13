@@ -1,11 +1,4 @@
 @font-face {
-    font-family: 'Borsok';
-    src: url('/fonts/Borsok.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'Inter';
     src: url('/fonts/Inter_28pt-Light.ttf format') format('ttf');
     font-weight: 400;
@@ -14,7 +7,6 @@
 
 body {
     font-family: 'Inter', sans-serif; /* Postavlja Inter kao zadani font */
-
 }
 
 header {
@@ -30,61 +22,62 @@ header {
     height: auto; /* Automatski prilagodite visinu prema omjeru slike */
 }
 
-.icon {
+.icon-container {
     text-align: right; /* Aligns the container to the right */
     display: flex; /* Use Flexbox for alignment */
     align-items: center; /* Vertically aligns the icons */
     gap: 50px; /* Adds spacing between the icons */
     margin-right: 30px; /* Adds some space from the right edge */
+    margin-left: 20px;
 }
 
-.icon img {
+.icon-container .icon-cart img,  
+.icon-container .icon-search img {
     width: 60px; /* Set a consistent width for both icons */
     height: 60px; /* Set a consistent height for both icons */
     cursor: pointer; /* Adds a pointer cursor for interactivity */
 }
 
+.icon-cart {
+    position: relative; /* Postavlja roditelja kao referentni okvir za apsolutno pozicioniranje */
+}
 
-.picture_text {
-    margin-bottom: 10px; /* Razmak između teksta i slike */
+.icon-cart .icon-cart-count {
+    position: absolute; /* Omogućuje pozicioniranje unutar roditelja */
+    margin: 0;
+    bottom: 0; /* Odmak od dna */
+    right: 0; /* Odmak od desnog ruba */
+    width: 30px; /* Širina kruga */
+    height: 30px; /* Visina kruga */
+    background-color: red; /* Boja pozadine */
+    color: white; /* Boja teksta */
+    text-align: center; /* Centriranje teksta horizontalno */
+    line-height: 30px; /* Centriranje teksta vertikalno */
+    border-radius: 50%; /* Pretvara kvadrat u krug */
+    font-size: 16px; /* Veličina fonta */
+    font-weight: bold; /* Podebljani tekst */
+}
+
+
+.picture {
+    position: relative;
 }
 
 .picture img {
-    width: 500px; /* Postavite željenu širinu */
-    height: auto; /* Automatski prilagodite visinu prema omjeru slike */
+    width: 100%;
+    height: auto; 
+    border-radius: 10px;
 }
 
-.products {
-    display: flex; /* Postavlja proizvode u red */
-    flex-wrap: wrap; /* Omogućuje prelamanje proizvoda u novi red ako nema dovoljno prostora */
-    gap: 30px; /* Razmak između proizvoda */
-    margin: 20px 0; /* Razmak iznad i ispod kontejnera */
-}
+.picture .picture_text {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 10%; /* Postavlja tekst na 50% visine roditelja */
+    left: 50%; /* Postavlja tekst na 50% širine roditelja */
+    transform: translateX(-50%); /* Horizontalno centriranje */
 
-.product {
-    display: flex;
-    flex-direction: column; /* Postavlja elemente unutar proizvoda u stupac */
-    align-items: center; /* Centriranje elemenata horizontalno */
-    justify-content: flex-start; /* Poravnanje elemenata prema vrhu */
-    width: 270px; /* Širina proizvoda */
-    border: 1px solid #ccc; /* Svijetlo sivi obrub */
-    padding: 10px; /* Dodaje razmak unutar proizvoda */
-    padding-top: 20px;
-    border-radius: 5px; /* Zaobljeni rubovi */
-    text-align: center; /* Centriranje teksta */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Blaga sjena za efekt */
-}
-
-.product img {
-    width: 250px; /* Širina slike */
-    height: 250px; /* Visina slike */
-    object-fit: cover; /* Održava omjer slike */
-    margin-bottom: 10px; /* Razmak između slike i teksta */
-    border-radius: 5px; /* Zaobljeni rubovi slike */
-}
-
-.product p {
-    font-size: 20px; /* Veličina fonta za tekst */
-    margin: 5px 0; /* Razmak između redaka teksta */
+    font-size: 50px;
+    text-align: center;
 }
 
