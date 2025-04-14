@@ -34,9 +34,6 @@ function displayCartCount() {
 
 function showCartItems() {
 
-    // Azuriraj prikaz broja proizvoda u kosarici
-    displayCartCount();
-
     const cartTableBody = document.getElementById("cart-items");
     // obrisi prethodne
     cartTableBody.innerHTML = ""
@@ -84,6 +81,7 @@ function showCartItems() {
     }   
 }
 
+
 function updateQuantity(product_name, change) {
 
     let current = Number(localStorage.getItem(product_name));
@@ -95,7 +93,10 @@ function updateQuantity(product_name, change) {
         localStorage.setItem(product_name, newQuantity);
     }
 
-    // ponovo prikazi azurirano stanje
+    // Ponovo prikazi azurirano stanje
     showCartItems();
+
+    // Azuriraj prikaz broja proizvoda u kosarici
+    displayCartCount();
     
 }

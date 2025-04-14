@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter_28pt-Light.ttf format') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Inter', sans-serif; /* Postavlja Inter kao zadani font */
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin-top: 90px;
+}
+
+.sidebar {
+    padding: 10px;
+    margin: 10px;
+}
+
+.content {
+    padding: 10px;
+    margin: 10px;
+    padding-left: 0;
+    margin-left: 0;
+}
+

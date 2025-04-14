@@ -1,20 +1,15 @@
-@font-face {
-    font-family: 'Inter';
-    src: url('/fonts/Inter_28pt-Light.ttf format') format('ttf');
-    font-weight: 400;
-    font-style: normal;
-}
-
-body {
-    font-family: 'Inter', sans-serif; /* Postavlja Inter kao zadani font */
-}
-
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Osigurava da header bude iznad ostalih elemenata */
     display: grid;
     grid-template-columns: 1fr 2fr auto; /* 3 stupca: lijevi, srednji, desni */
     align-items: center; /* Poravnanje elemenata po visini */
     font-size: 20px;
     font-weight: bold;
+    background-color: white;
 }
 
 .logo img {
@@ -57,27 +52,3 @@ header {
     font-size: 16px; /* Veličina fonta */
     font-weight: bold; /* Podebljani tekst */
 }
-
-
-.picture {
-    position: relative;
-}
-
-.picture img {
-    width: 100%;
-    height: auto; 
-    border-radius: 10px;
-}
-
-.picture .picture_text {
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    top: 10%; /* Postavlja tekst na 50% visine roditelja */
-    left: 50%; /* Postavlja tekst na 50% širine roditelja */
-    transform: translateX(-50%); /* Horizontalno centriranje */
-
-    font-size: 50px;
-    text-align: center;
-}
-

@@ -1,6 +1,7 @@
 .products {
-    display: flex; /* Postavlja proizvode u red */
-    flex-wrap: wrap; /* Omogućuje prelamanje proizvoda u novi red ako nema dovoljno prostora */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    justify-items: center;
     gap: 30px; /* Razmak između proizvoda */
     margin: 20px 0; /* Razmak iznad i ispod kontejnera */
 }
