@@ -1,5 +1,5 @@
 function addToCart(product_name) {
-    // trenutni broj proizvoda u kosarici
+    // Trenutni broj proizvoda u kosarici
     let count = localStorage.getItem(product_name);
     let new_count = 0;
     
@@ -39,5 +39,3 @@ function displayProductCartQuantity(product_name) {
         }
     }
 }
-
-

@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/cart.css">
+    <link rel="stylesheet" href="styles/responsive.css">
 
 </head>
 <body>
@@ -20,7 +21,9 @@
                 <img src="images/logo.jpg" alt="logo_icon">
             </a>
         </div>
-        <div class="category">Pogledajte što ste odabrali dosad.</div>
+        <div class="header-category" id="header-category">
+            <p>Pogledajte što ste odabrali dosad.</p>
+        </div>
         <div class="icon-container">
             <div class="icon-cart" id="icon-cart">
                 <a href="cart.html">
@@ -57,9 +60,5 @@
 
     
     <script src="scripts/manageCart.js"></script>
-    <script>
-        showCartItems();
-        displayCartCount();
-    </script>
 </body>
 </html>

@@ -3,52 +3,52 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; /* Osigurava da header bude iznad ostalih elemenata */
+    z-index: 1000;
     display: grid;
-    grid-template-columns: 1fr 2fr auto; /* 3 stupca: lijevi, srednji, desni */
-    align-items: center; /* Poravnanje elemenata po visini */
+    grid-template-columns: 1fr 2fr auto;
+    align-items: center;
     font-size: 20px;
     font-weight: bold;
     background-color: white;
 }
 
 .logo img {
-    width: 375px; /* Postavite željenu širinu */
-    height: auto; /* Automatski prilagodite visinu prema omjeru slike */
+    width: 375px;
+    height: auto;
 }
 
 .icon-container {
-    text-align: right; /* Aligns the container to the right */
-    display: flex; /* Use Flexbox for alignment */
-    align-items: center; /* Vertically aligns the icons */
-    gap: 50px; /* Adds spacing between the icons */
-    margin-right: 30px; /* Adds some space from the right edge */
+    text-align: right;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-right: 30px;
     margin-left: 20px;
 }
 
 .icon-container .icon-cart img,  
 .icon-container .icon-search img {
-    width: 60px; /* Set a consistent width for both icons */
-    height: 60px; /* Set a consistent height for both icons */
-    cursor: pointer; /* Adds a pointer cursor for interactivity */
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
 }
 
 .icon-cart {
-    position: relative; /* Postavlja roditelja kao referentni okvir za apsolutno pozicioniranje */
+    position: relative;
 }
 
 .icon-cart .icon-cart-count {
-    position: absolute; /* Omogućuje pozicioniranje unutar roditelja */
+    position: absolute;
     margin: 0;
-    bottom: 0; /* Odmak od dna */
-    right: 0; /* Odmak od desnog ruba */
-    width: 30px; /* Širina kruga */
-    height: 30px; /* Visina kruga */
-    background-color: red; /* Boja pozadine */
-    color: white; /* Boja teksta */
-    text-align: center; /* Centriranje teksta horizontalno */
-    line-height: 30px; /* Centriranje teksta vertikalno */
-    border-radius: 50%; /* Pretvara kvadrat u krug */
-    font-size: 16px; /* Veličina fonta */
-    font-weight: bold; /* Podebljani tekst */
+    bottom: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: bold;
 }

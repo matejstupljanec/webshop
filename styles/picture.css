@@ -12,16 +12,13 @@
 
 .picture .picture_text {
     position: absolute;
-    top: 1%; /* Postavlja tekst na 50% visine roditelja */
-    left: 50%; /* Postavlja tekst na 50% širine roditelja */
-    transform: translateX(-50%); /* Horizontalno centriranje */
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
     font-size: 2vw;
     width: 80%;
-
     color: white;
     font-weight: bold;
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 1);    
-    
 }
-

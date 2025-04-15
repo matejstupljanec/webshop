@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles/picture.css">
     <link rel="stylesheet" href="styles/menu.css">
     <link rel="stylesheet" href="styles/products.css">
+    <link rel="stylesheet" href="styles/responsive.css">
 </head>
 <body>
 
@@ -22,11 +23,11 @@
                 <img src="images/logo.jpg" alt="logo_icon">
             </a>
         </div>
-        <div id="header_category">
+        <div class="header-category" id="header-category">
             <p>Dobrodošli u Igraonicu - svijet igre i zabave!</p>
         </div>
         <div class="icon-container">
-            <div class="icon-cart" id="icon-cart">
+            <div class="icon-cart" id="icon-cart" onload="displayCartCount()">
                 <a href="cart.html">
                     <img src="images/cart.png" alt="cart_icon">
                 </a>
@@ -63,24 +64,23 @@
             </nav>
         </div>
 
-        <div class="content">
-            <div class="picture">
-                <img src="images/front_pic.jpg" alt="front_picture">
-                <div class="picture_text">
-                    <p>Pronađite savršene igračke za sve uzraste i uživajte u trenucima bezbrižne igre.</p>
-                </div>
+
+        <div class="picture">
+            <img src="images/front_pic.jpg" alt="front_picture">
+            <div class="picture_text">
+                <p>Pronađite savršene igračke za sve uzraste i uživajte u trenucima bezbrižne igre.</p>
             </div>
-
-
-            <!-- Ovdje se dinamicki dodaju proizvodi -->
-            <div id="products-container" class="products"></div>   
         </div>
+
+
+        <div class="products" id="products-container">
+            <!-- Ovdje se dinamicki dodaju proizvodi -->
+        </div>   
     </div>
 
     <script src="scripts/data.js"></script>
     <script src="scripts/changeCategory.js"></script>
     <script src="scripts/addToCart.js"></script>
     <script src="scripts/manageCart.js"></script>
-    <script>displayCartCount()</script>
 </body>
 </html>

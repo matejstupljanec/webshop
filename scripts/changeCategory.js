@@ -3,7 +3,7 @@ function showProducts(category_name) {
     // Glavni DIV container koji sadrzi sve proizvode
     const productsContainer = document.getElementById("products-container");
 
-    const headerCategoryDiv = document.getElementById("header_category");
+    const headerCategoryDiv = document.getElementById("header-category");
 
     const category = data.categories.find(category => category.name === category_name);
 
@@ -29,7 +29,6 @@ function showProducts(category_name) {
             imageContainer.classList.add("image-container");
             imageContainer.setAttribute("id-product", product.name)
             
-
             const productImage = document.createElement("img");
             productImage.classList.add("product-image");
             productImage.src = product.image;
@@ -52,6 +51,7 @@ function showProducts(category_name) {
                 imageContainer.appendChild(productCartCount);
             }
     
+
             // ime proizvoda
             const productName = document.createElement("p");
             productName.textContent = product.name;
@@ -68,5 +68,4 @@ function showProducts(category_name) {
     
         })
     }
-
 }

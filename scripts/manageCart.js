@@ -1,4 +1,19 @@
+// Prilikom ucitavanja stranica pozovi funkcije
+window.onload = function () {
+    const cartIcon = document.getElementById("icon-cart");
+    const cartItems = document.getElementById("cart-items");
+    if (cartIcon) {
+        displayCartCount();
+    }
+    if (cartItems) {
+        showCartItems();
+    }
+}
+
+
+// Funckija za prikaz broja proizvoda u kosarici uz ikonu kosarice
 function displayCartCount() {
+
     // Zbroji sve proizvode dodane u kosaricu
     let sum = 0;
     for (let i = 0; i < localStorage.length; i++) {
@@ -23,51 +38,51 @@ function displayCartCount() {
             iconCart.appendChild(cartCount);
         }
     } else {
-        // ako suma postane nula, makni element
+        // Ako suma postane nula, makni element
         if (cartCount) {
             cartCount.remove();
         }
     }
-
 }
 
 
+// Funkcija za prikaz svih proizvdoa koji su u kosarici
 function showCartItems() {
 
     const cartTableBody = document.getElementById("cart-items");
-    // obrisi prethodne
+    // Obrisi prethodne
     cartTableBody.innerHTML = ""
 
     for (let i = 0; i < localStorage.length; i++) {
         let product_name = localStorage.key(i);
         let product_quantity = Number(localStorage.getItem(product_name));
 
-        // red tablice
+        // Red tablice
         const row = document.createElement("tr");
 
-        // ime proizvoda
+        // Ime proizvoda
         const productName = document.createElement("td");
         productName.textContent = product_name;
         row.appendChild(productName);
 
 
-        // kolicina s gumbima za smanjenje i povecanje
+        // Kolicina s gumbima za smanjenje i povecanje
         const productQuantityTd = document.createElement("td");
 
-        // gumb smanji
+        // Gumb smanji
         const reduceButton = document.createElement("button");
         reduceButton.classList.add("change-quantity-button")
         reduceButton.textContent = "-";
         reduceButton.onclick = () => updateQuantity(product_name, -1);
         productQuantityTd.appendChild(reduceButton);
 
-        // kolicina
+        // Kolicina
         const quantitySpan = document.createElement("span");
         quantitySpan.classList.add("quantity-text-span");
         quantitySpan.textContent = product_quantity;
         productQuantityTd.appendChild(quantitySpan);
 
-        // gumb povecaj
+        // Gumb povecaj
         const increaseButton = document.createElement("button");
         increaseButton.classList.add("change-quantity-button");
         increaseButton.textContent = "+";
@@ -82,6 +97,7 @@ function showCartItems() {
 }
 
 
+// Funkcija koja azurira broj proizvoda prilikom mijenjanja u kosarici s - i +
 function updateQuantity(product_name, change) {
 
     let current = Number(localStorage.getItem(product_name));
@@ -98,5 +114,4 @@ function updateQuantity(product_name, change) {
 
     // Azuriraj prikaz broja proizvoda u kosarici
     displayCartCount();
-    
 }
