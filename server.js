@@ -33,12 +33,12 @@ app.use((req, res, next) => {
 const homeRouter = require('./routes/home.routes');
 const cartRouter = require('./routes/cart.routes');
 
+app.use('/home', homeRouter);
+app.use('/cart', cartRouter);
+
 // preusmjeri root
 app.get('/', (req, res) => {
     res.redirect('/home/getCategories');
 });
-
-app.use('/home', homeRouter);
-app.use('/cart', cartRouter);
 
 app.listen(3000);

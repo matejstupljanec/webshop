@@ -1,16 +1,19 @@
 var express = require('express');
 var router = express.Router();
 
+// ruta /home automatski preusmjerava na /home/getCategories
 router.get('/', (req, res) => {
     res.redirect('/home/getCategories');
 })
 
+
 router.get('/getCategories', (req, res) => {
     const { data } = require('../data/mydata.js');
-    let categories_data = data.categories;
+    let categoriesData = data.categories;
 
+    // dohvati imena kategorija iz podataka
     let categories = [];
-    categories_data.forEach(element => {
+    categoriesData.forEach(element => {
         categories.push(element.name);
     });
 
@@ -25,22 +28,24 @@ router.get('/getCategories', (req, res) => {
 
 router.get('/getProducts/:id', (req, res) => {
     const { data } = require('../data/mydata.js');
-    let categories_data = data.categories;
+    let categoriesData = data.categories;
 
+    // dohvati imena kategorija iz podataka
     let categories = [];
-    categories_data.forEach(element => {
+    categoriesData.forEach(element => {
         categories.push(element.name);
     });
     
-    const category_name = req.params.id;
-    let products = categories_data.find(category => category.name === category_name);
+    // dohvati proizvode za id kategoriju
+    const categoryName = req.params.id;
+    let products = categoriesData.find(category => category.name === categoryName);
     products = products.products
 
     res.render('home', {
-        welcomeText: category_name.toUpperCase() + " (trenutno otvoreno)",
+        welcomeText: categoryName.toUpperCase() + " (trenutno otvoreno)",
         categories: categories,
         products: products,
-        category_name: category_name,
+        category_name: categoryName,
         cart: req.session.cart,
         cartCount: req.session.cartCount
     });
