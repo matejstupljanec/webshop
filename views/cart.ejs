@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matej Stupljanec">
+    <meta name="description" content="Web-trgovina za igračke">
+    
+    <title>Igraonica</title>
+
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/cart.css">
+    <link rel="stylesheet" href="/styles/responsive.css">
+
+</head>
+<body>
+
+    <%- include('partials/header', { welcomeText: 'Pogledajte što ste odabrali dosad.'}) %>
+    
+    <div class="cart">
+        <h1>KOŠARICA</h1>
+
+        <div class="cart-table">
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Naziv proizvoda</td>
+                        <th>Količina</td>
+                    </tr>
+                </thead>
+
+                <tbody id="cart-items">
+                    <% Object.entries(cart).forEach(([product_name, quantity]) => { %>
+                        <tr id="<%= product_name %>">
+                            <td> <%= product_name %> </td>
+                            <td>
+                                <button class="change-quantity-button decreaseQuantity" productId="<%= product_name %>">-</button>
+                                <span class="quantity-text-span" id="span_<%= product_name %>"> <%= quantity %> </span>
+                                <button class="change-quantity-button increaseQuantity" productId="<%= product_name %>">+</button>
+                            </td>
+                        </tr>
+                    <% }) %>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+
+    <script type="module" src="/scripts/cart.js"></script>
+</body>
+</html>

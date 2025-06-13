@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matej Stupljanec">
+    <meta name="description" content="Web-trgovina za igračke">
+    
+    <title>Igraonica</title>
+
+    <link rel="stylesheet" href="/styles/layout_index.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/picture.css">
+    <link rel="stylesheet" href="/styles/menu.css">
+    <link rel="stylesheet" href="/styles/products.css">
+    <link rel="stylesheet" href="/styles/responsive.css">
+</head>
+<body>
+
+    <%- include('partials/header'); %>
+
+    <div class="main-container">
+        <div class="sidebar">
+            <nav class="categories">
+                <ul>
+                    <% categories.forEach(category => { %>
+                        <a href="/home/getProducts/<%= category %>">
+                            <li><%= category %></li>
+                        </a>
+                    <% }) %>
+                </ul>
+            </nav>
+
+            <nav class="categories">
+                <ul>
+                    <li>Kontakt</li>
+                    <li>Newsletter</li>
+                    <li>Pretplati se</li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <div class="picture">
+            <img src="/images/front_pic.jpg" alt="front_picture">
+            <div class="picture_text">
+                <p>Pronađite savršene igračke za sve uzraste i uživajte u trenucima bezbrižne igre.</p>
+            </div>
+        </div>
+
+
+        <div class="products" id="products-container">
+            <% products.forEach(product => { %>
+                <div class="product">
+                    <div class="image-container" id="image-container" productId="<%= product.name %>">
+                        <img class="product-image" src="<%= product.image %>">
+                        <img class="cart-overlay" id="cart-overlay" productId="<%= product.name %>" src="/images/cart.png">
+                        <% if(cart[product.name]) { %>
+                            <p class="product-cart-count"> <%= cart[product.name] %> </p>
+                        <% } %>
+                    </div>
+                    <p><%= product.name %></p>
+                    <p><%= category_name %></p>
+                </div>
+            <% }) %>
+        </div>   
+    </div>
+
+    <script type="module" src="/scripts/home.js"></script>
+</body>
+</html>

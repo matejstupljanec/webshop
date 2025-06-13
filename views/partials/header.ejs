@@ -1,0 +1,23 @@
+<header>
+    <div class="logo">
+        <a href="/home/getCategories">
+            <img src="/images/logo.jpg" alt="logo_icon">
+        </a>
+    </div>
+    <div class="header-category" id="header-category">
+        <p><%= welcomeText %></p> <!-- dinamicki pozdravni tekst -->
+    </div>
+    <div class="icon-container">
+        <div class="icon-cart" id="icon-cart">
+            <a href="/cart/getAll">
+                <img src="/images/cart.png" alt="cart_icon">
+            </a>
+            <% if(cartCount > 0) { %>
+                <p class="icon-cart-count" id="icon-cart-count"> <%= cartCount %> </p>
+            <% } %>
+        </div>
+        <div class="icon-search">
+            <img src="/images/search.png" alt="search_icon">
+        </div>
+    </div>
+</header>

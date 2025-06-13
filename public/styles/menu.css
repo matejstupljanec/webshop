@@ -23,6 +23,11 @@
     margin-bottom: 10px;
 }
 
+.categories a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .categories li:hover {
     background-color: #007bff;
     color: white;
